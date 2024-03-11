@@ -23,7 +23,7 @@ class Product(BaseModel):
 class ProductMaterials(BaseModel):
     product = models.ForeignKey(Product,on_delete=models.CASCADE,related_name="products")
     material = models.ForeignKey(Material,on_delete=models.CASCADE, related_name="materials")
-    quantity = models.DecimalField(max_digits=10,decimal_places=2)
+    quantity = models.FloatField()
 
     class Meta:
         verbose_name_plural = "Product Materials"
@@ -31,7 +31,7 @@ class ProductMaterials(BaseModel):
 
 class WareHouse(BaseModel):
     material = models.ForeignKey(Material,on_delete=models.CASCADE)
-    remainder = models.DecimalField(max_digits=10,decimal_places=2)
+    remainder = models.FloatField()
     price = models.DecimalField(max_digits=10,decimal_places=2)
 
     def __str__(self) -> str:

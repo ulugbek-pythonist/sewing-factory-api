@@ -21,3 +21,15 @@ class ProductMaterialsSerializer(serializers.ModelSerializer):
 
     def get_material_name(self,obj):
         return obj.material.name
+    
+
+class WareHouseSpecialSerilizer(serializers.ModelSerializer):
+    material_name = serializers.SerializerMethodField()
+
+    class Meta:
+        model = WareHouse
+        fields = ["id","material_name","remainder","price"]
+    
+    def get_material_name(self,obj):
+        return obj.material.name
+ 
