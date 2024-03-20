@@ -1,7 +1,7 @@
 # sewing-factory-api
 API for sewing factory
 
-1. Clone project repo and change direction:
+1. Clone project repo and change direction:<br/>
 `git clone https://github.com/ulugbek-pythonist/sewing-factory-api.git`<br/>
 `cd sewing-factory-api`
 <br/>
