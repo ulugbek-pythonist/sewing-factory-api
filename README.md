@@ -2,20 +2,20 @@
 API for sewing factory
 
 1. Clone project repo and change direction:
-`git clone https://github.com/ulugbek-pythonist/sewing-factory-api.git`
+`git clone https://github.com/ulugbek-pythonist/sewing-factory-api.git`<br/>
 `cd sewing-factory-api`
+<br/>
+2. Create virtual environment and activate it:<br/>
+`python3 -m venv env`<br/>
+`source env/bin/activate`<br/>
 
-2. Create virtual environment and activate it:
-`python3 -m venv env`
-`source env/bin/activate`
+3. Install requirements:<br/>
+`pip install -r requirements.txt`<br/>
 
-3. Install requirements:
-`pip install -r requirements.txt`
+4. Follow this command:<br/>
+`python manage.py runserver`<br/>
 
-4. Follow this command:
-`python manage.py runserver`
-
-5. Make requests:
+5. Make requests:<br/>
 GET: `http://127.0.0.1:8000/api/products/`
 
 ```
