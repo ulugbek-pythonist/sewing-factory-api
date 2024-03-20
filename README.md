@@ -3,8 +3,8 @@ API for sewing factory
 
 1. Clone project repo and change direction:<br/>
 `git clone https://github.com/ulugbek-pythonist/sewing-factory-api.git`<br/>
-`cd sewing-factory-api`
-<br/>
+`cd sewing-factory-api`<br/>
+
 2. Create virtual environment and activate it:<br/>
 `python3 -m venv env`<br/>
 `source env/bin/activate`<br/>
