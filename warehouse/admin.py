@@ -1,25 +1,24 @@
 from django.contrib import admin
 from unfold.admin import ModelAdmin
 
-from .models import Product, Material, ProductMaterials, WareHouse
+from .models import Product, Material, ProductMaterial, Warehouse
 
 
 @admin.register(Product)
 class ProductAdmin(ModelAdmin):
-    list_display = ["name","bar_code"]
+    list_display = ["name", "barcode"]
 
 
 @admin.register(Material)
 class MaterialAdmin(ModelAdmin):
-    list_display = ["name",]
+    list_display = ["name"]
 
 
-@admin.register(ProductMaterials)
+@admin.register(ProductMaterial)
 class ProductMaterialsAdmin(ModelAdmin):
-    list_display = ["product","material","quantity"]
+    list_display = ["product", "material", "quantity"]
 
 
-@admin.register(WareHouse)
+@admin.register(Warehouse)
 class WareHouseAdmin(ModelAdmin):
-    list_display = ["id","material","remainder","price"]
-
+    list_display = ["id", "material", "remainder", "price"]
