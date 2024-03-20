@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "6eeecf74-6162-472b-91c9-8af77be62bbe",
+		"name": "sewing-factory-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29777516"
+	},
+	"item": [
+		{
+			"name": "task",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "task",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"products\": [\n{\"product_id\":1,\"quantity\":30},\n{\"product_id\":2,\"quantity\":20}\n]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:9000/api/material-requirements/"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 20 Mar 2024 04:32:02 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "747"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"result\": [\n        {\n            \"product_name\": \"Ko'ylak\",\n            \"product_qty\": 30,\n            \"product_materials\": [\n                {\n                    \"warehouse_id\": 1,\n                    \"material_name\": \"Mato\",\n                    \"qty\": 12,\n                    \"price\": 1500\n                },\n                {\n                    \"warehouse_id\": 2,\n                    \"material_name\": \"Mato\",\n                    \"qty\": 12,\n                    \"price\": 1600\n                },\n                {\n                    \"warehouse_id\": 5,\n                    \"material_name\": \"Tugma\",\n                    \"qty\": 150,\n                    \"price\": 300\n                },\n                {\n                    \"warehouse_id\": 3,\n                    \"material_name\": \"Ip\",\n                    \"qty\": 40,\n                    \"price\": 500\n                },\n                {\n                    \"warehouse_id\": 4,\n                    \"material_name\": \"Ip\",\n                    \"qty\": 260,\n                    \"price\": 550\n                }\n            ]\n        },\n        {\n            \"product_name\": \"Shim\",\n            \"product_qty\": 20,\n            \"product_materials\": [\n                {\n                    \"warehouse_id\": 2,\n                    \"material_name\": \"Mato\",\n                    \"qty\": 28,\n                    \"price\": 1600\n                },\n                {\n                    \"warehouse_id\": 4,\n                    \"material_name\": \"Ip\",\n                    \"qty\": 40,\n                    \"price\": 550\n                },\n                {\n                    \"warehouse_id\": null,\n                    \"material_name\": \"Ip\",\n                    \"qty\": 260,\n                    \"price\": null\n                },\n                {\n                    \"warehouse_id\": 6,\n                    \"material_name\": \"Zamok\",\n                    \"qty\": 20,\n                    \"price\": 2000\n                }\n            ]\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "products",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "products",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:9000/api/products/"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 20 Mar 2024 04:33:04 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "254"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"created_at\": \"2024-03-20T04:21:50.653466Z\",\n        \"updated_at\": \"2024-03-20T04:21:50.653481Z\",\n        \"name\": \"Ko'ylak\",\n        \"barcode\": \"123\"\n    },\n    {\n        \"id\": 2,\n        \"created_at\": \"2024-03-20T04:21:50.662399Z\",\n        \"updated_at\": \"2024-03-20T04:21:50.662416Z\",\n        \"name\": \"Shim\",\n        \"barcode\": \"456\"\n    }\n]"
+				}
+			]
+		}
+	]
+}
